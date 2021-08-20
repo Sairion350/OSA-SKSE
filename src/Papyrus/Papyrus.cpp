@@ -9,6 +9,7 @@
 #include "Papyrus/PapyrusFace.h"
 #include "Papyrus/PapyrusObject.h"
 #include "Papyrus/PapyrusUtil.h"
+#include "Papyrus/PapyrusMutex.h"
 #undef BIND
 
 namespace Papyrus
@@ -23,6 +24,7 @@ namespace Papyrus
 			papyrus->Register(PapyrusFace::Bind);
 			papyrus->Register(PapyrusObject::Bind);
 			papyrus->Register(PapyrusUtil::Bind);
+			papyrus->Register(PapyrusMutex::Bind);
 		}
 	}
 }
